@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "bin": {
-  "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
   "files": [
-   "dist"
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,6 +21,9 @@
   },
   "author": "Mikhail Serov",
   "license": "ISC",
+  "dependencies": {
+    "readline-sync": "*"
+  },
   "devDependencies": {
     "babel-cli": "*",
     "babel-core": "*",
