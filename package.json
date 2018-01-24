@@ -1,8 +1,8 @@
 {
   "name": "brain-games-mserov",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js"

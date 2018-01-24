@@ -10,10 +10,10 @@ const brainEven = () => {
 
   const isEven = (num) => {
     if (num % 2 === 0) {
-      return true;
+      return 'yes';
     }
 
-    return false;
+    return 'no';
   };
 
   let correctCounter = 0;
@@ -25,16 +25,12 @@ const brainEven = () => {
 
     const answer = readlineSync.question('Your answer: ');
 
-    if (answer !== 'yes' && answer !== 'no') console.log(`Wrong input, ${name}!`);
+    // if (answer !== 'yes' && answer !== 'no') console.log(`Wrong input, ${name}!`);
 
-    if ((isEven(num) === true && answer === 'yes') || (isEven(num) === false && answer === 'no')) {
+    if (isEven(num) === answer) {
       console.log('Correct!');
       correctCounter += 1;
-    } else if (isEven(num) === true && answer === 'no') {
-      console.log(`'no' is a wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}!`);
-    } else if (isEven(num) === false && answer === 'yes') {
-      console.log(`'yes' is a wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
-    }
+    } else console.log(`${answer} is a wrong answer ;(. Correct answer was ${isEven(num)}.\nLet's try again, ${name}!`);
   }
 
   console.log(`Congratulations, ${name}!`);
