@@ -1,4 +1,4 @@
-import { interfaceAll } from '..';
+import interfaceAll from '..';
 
 const game = () => {
   const rules = 'What is the result of the expression?';

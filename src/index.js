@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const interfaceAll = (rules, generateQuestion, correctAnswer) => {
+const interfaceAll = (rules, generateQuestion, correctAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(`${rules}\n`);
 
@@ -25,4 +25,4 @@ export const interfaceAll = (rules, generateQuestion, correctAnswer) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-//const name = getName();
+export default interfaceAll;

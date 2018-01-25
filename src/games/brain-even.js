@@ -1,4 +1,4 @@
-import { interfaceAll } from '..';
+import interfaceAll from '..';
 
 const game = () => {
   const rules = 'Answer "yes" if tne number is even otherwise answer "no".';
