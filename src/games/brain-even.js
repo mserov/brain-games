@@ -1,22 +1,27 @@
+import { cons } from 'hexlet-pairs';
 import interfaceAll from '..';
 
 const game = () => {
   const rules = 'Answer "yes" if tne number is even otherwise answer "no".';
 
-  const generateQuestion = () => {
+  const generateQuestionAnswer = () => {
+    const ifEven = (num) => {
+      if (num % 2 === 0) {
+        return 'yes';
+      }
+
+      return 'no';
+    };
+
     const maxNum = 1000;
-    return Math.floor(Math.random() * maxNum);
+
+    const question = Math.floor(Math.random() * maxNum);
+    const correctAnswer = ifEven(question);
+
+    return cons(question, correctAnswer);
   };
 
-  const correctAnswer = (num) => {
-    if (num % 2 === 0) {
-      return 'yes';
-    }
-
-    return 'no';
-  };
-
-  interfaceAll(rules, generateQuestion, correctAnswer);
+  interfaceAll(rules, generateQuestionAnswer);
 };
 
 export default game;
