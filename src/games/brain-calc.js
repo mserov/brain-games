@@ -26,7 +26,18 @@ const game = () => {
     return `${num1} ${sign(operation)} ${num2}`;
   };
 
-  const correctAnswer = str => String(eval(str));
+  const correctAnswer = (str) => {
+    switch (str[2]) {
+      case '+':
+        return String(Number(str[0]) + Number(str[4]));
+      case '-':
+        return String(Number(str[0]) - Number(str[4]));
+      case '*':
+        return String(Number(str[0]) * Number(str[4]));
+      default:
+        return 'default';
+    }
+  };
 
   interfaceAll(rules, generateQuestion, correctAnswer);
 };
