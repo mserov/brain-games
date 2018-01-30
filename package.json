@@ -1,6 +1,6 @@
 {
   "name": "brain-games-mserov",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "",
   "main": "dist/index.js",
   "bin": {
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mserov/project-lvl1-s192.git"
+    "url": "git+https://github.com/mserov/brain-games.git"
   },
   "author": "Mikhail Serov",
   "license": "ISC",

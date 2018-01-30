@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import interfaceAll from '..';
+import engine from '..';
 
 const game = () => {
   const rules = 'Balance the given number.';
@@ -36,7 +36,7 @@ const game = () => {
     return cons(question, correctAnswer);
   };
 
-  interfaceAll(rules, generateQuestionAnswer);
+  engine(rules, generateQuestionAnswer);
 };
 
 export default game;

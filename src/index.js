@@ -1,7 +1,7 @@
 import { car, cdr } from 'hexlet-pairs';
 import readlineSync from 'readline-sync';
 
-const interfaceAll = (rules, generateQuestionAnswer) => {
+const engine = (rules, generateQuestionAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(`${rules}\n`);
 
@@ -29,4 +29,4 @@ const interfaceAll = (rules, generateQuestionAnswer) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export default interfaceAll;
+export default engine;

@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import interfaceAll from '..';
+import engine from '..';
 
 const game = () => {
   const rules = 'Is this number prime?';
@@ -21,7 +21,7 @@ const game = () => {
     return cons(question, correctAnswer);
   };
 
-  interfaceAll(rules, generateQuestionAnswer);
+  engine(rules, generateQuestionAnswer);
 };
 
 export default game;
